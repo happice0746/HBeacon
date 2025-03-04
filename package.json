@@ -1,0 +1,42 @@
+{
+  "name": "HBeacon",
+  "version": "1.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rslib build",
+    "check": "biome check --write",
+    "dev": "rslib build --watch",
+    "format": "prettier --write .",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@rslib/core": "^0.5.3",
+    "@types/node": "^22.8.1",
+    "husky": "^9.1.7",
+    "prettier": "^3.5.2",
+    "typescript": "^5.8.2"
+  },
+  "keywords": [
+    "heimdallr",
+    "error",
+    "performance",
+    "sourcemap",
+    "collect",
+    "broswer",
+    "node",
+    "wechat",
+    "vue"
+  ]
+}
