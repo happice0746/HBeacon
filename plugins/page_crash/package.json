@@ -1,5 +1,5 @@
 {
-  "name": "page_crash",
+  "name": "@HBeacon/page_crash",
   "version": "0.0.0",
   "type": "module",
   "exports": {

@@ -1,1 +1,3 @@
-export const squared = (n: number): number => n * n;
+export * from "./rewrite";
+export * from "./getInfo";
+export * from "./request";

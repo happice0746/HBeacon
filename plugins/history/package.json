@@ -1,5 +1,5 @@
 {
-  "name": "history",
+  "name": "@HBeacon/history",
   "version": "0.0.0",
   "type": "module",
   "exports": {
