@@ -6,13 +6,13 @@ class UserDeviceDetectionStrategy {
   constructor(userAgentStr: string) {
     this.userAgentStr = userAgentStr;
     this.userAgentObj = {
-      browserName: '', // 浏览器名称
-      browserVersion: '', // 浏览器版本
-      osName: '', // 操作系统名称
-      osVersion: '', // 操作系统版本
-      deviceType: '', // 设备名称
-      screenWidth: 0, // 屏幕宽度
-      screenHeight: 0, // 屏幕高度
+      browserName: '',
+      browserVersion: '',
+      osName: '',
+      osVersion: '',
+      deviceType: '',
+      screenWidth: 0,
+      screenHeight: 0,
     } as DeviceInfo;
   }
 

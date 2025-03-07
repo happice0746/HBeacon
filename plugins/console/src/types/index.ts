@@ -1,5 +1,5 @@
 export interface ConsoleReportPluginOption {
-  levels: ConsoleReportLevel[];
+  levels: ValueOf<ConsoleReportLevel>[];
   
 }
 
@@ -11,6 +11,8 @@ export enum ConsoleReportLevel {
 }
 
 export interface ConsoleReportMsg {
-  level: ConsoleReportLevel;
+  level: ValueOf<ConsoleReportLevel>;
   args: any;
 } 
+
+type ValueOf<T> = T[keyof T];

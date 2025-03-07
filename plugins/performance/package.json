@@ -20,6 +20,7 @@
   "devDependencies": {
     "@rslib/core": "^0.5.3",
     "@types/node": "^22.8.1",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.2",
+    "@HBeacon/utils": "workspace:^"
   }
 }

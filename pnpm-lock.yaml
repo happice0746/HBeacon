@@ -130,6 +130,9 @@ importers:
 
   plugins/performance:
     devDependencies:
+      '@HBeacon/utils':
+        specifier: workspace:^
+        version: link:../../packages/utils
       '@rslib/core':
         specifier: ^0.5.3
         version: 0.5.3(typescript@5.8.2)

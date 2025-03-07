@@ -1,4 +1,4 @@
-import { objectIntoFormData } from "./rewrite";
+import { objectIntoFormData } from "./format";
 
 export function sendBeacon(url:string, data:Record<string, any>) {
   if (!url || typeof url !== 'string') {

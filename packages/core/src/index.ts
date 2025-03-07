@@ -30,10 +30,12 @@ export class HBeacon {
         console.error('monitor is called with error');
       }
     }
+    return this;
   }
 
   report<T = any>(data: T) {
-    sendBeacon(this._option.url, this.encapsulated(data));
+    const formdata = this.encapsulated(data);
+    sendBeacon(this._option.url, formdata);
   }
 
   encapsulated<T = any>(data: T) {
