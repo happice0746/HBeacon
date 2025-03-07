@@ -7,6 +7,13 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@HBeacon/core':
+        specifier: workspace:^
+        version: link:packages/core
+      '@HBeacon/types':
+        specifier: workspace:^
+        version: link:packages/types
     devDependencies:
       '@biomejs/biome':
         specifier: ^1.9.4
@@ -39,6 +46,12 @@ importers:
 
   packages/core:
     devDependencies:
+      '@HBeacon/types':
+        specifier: workspace:^
+        version: link:../types
+      '@HBeacon/utils':
+        specifier: workspace:^
+        version: link:../utils
       '@rslib/core':
         specifier: ^0.5.3
         version: 0.5.3(typescript@5.8.2)
@@ -75,6 +88,12 @@ importers:
 
   plugins/console:
     devDependencies:
+      '@HBeacon/types':
+        specifier: workspace:^
+        version: link:../../packages/types
+      '@HBeacon/utils':
+        specifier: workspace:^
+        version: link:../../packages/utils
       '@rslib/core':
         specifier: ^0.5.3
         version: 0.5.3(typescript@5.8.2)
@@ -111,6 +130,9 @@ importers:
 
   plugins/performance:
     devDependencies:
+      '@HBeacon/utils':
+        specifier: workspace:^
+        version: link:../../packages/utils
       '@rslib/core':
         specifier: ^0.5.3
         version: 0.5.3(typescript@5.8.2)

@@ -38,5 +38,9 @@
     "node",
     "wechat",
     "vue"
-  ]
+  ],
+  "dependencies": {
+    "@HBeacon/core": "workspace:^",
+    "@HBeacon/types": "workspace:^"
+  }
 }
