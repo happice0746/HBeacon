@@ -1,7 +1,7 @@
 import { ContainMethodObject } from "./types";
 
-export function rewriteNativeMethod(source: ContainMethodObject, method: string, newMethodWrapper: (...args: any[]) => any) {
-  if(!source[method]) {
+export function rewriteNativeMethod(source: ContainMethodObject, method: string, newMethodWrapper: (...args: any[]) => any, isForced: boolean = false) {
+  if(!source[method] && !isForced) {
     console.error(`method ${method} is not exist in source`);
     return;
   }
